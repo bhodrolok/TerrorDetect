@@ -1,0 +1,9 @@
+pandas
+numpy
+nltk
+textblob
+seaborn
+re
+preprocessor
+tweet-preprocessor
+sklearn
