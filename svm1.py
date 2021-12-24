@@ -28,7 +28,7 @@ pd.set_option('display.width', 690)
 
 #Column name as variables
 #Corpus is of following csv format: TweetID, Tweet, User, Label)
-corpus = corpus.drop('TweetID')
+corpus = corpus.drop('TweetID',1)
 #TweetID is unneccesarry
 
 tweet = corpus.columns.values[0]
