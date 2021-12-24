@@ -97,12 +97,11 @@ print("Accuracy score for SVC is: ", accuracy_score(y_test, y_pred_svm) * 100, '
 print(classification_report(y_test, y_pred_svm))
 
 a = confusion_matrix(y_test, y_pred_svm)
-plt.figure(dpi=420)
+plt.figure(dpi=140)
 sns.heatmap(a.T, annot=True, fmt='d', cbar = False)
 
 plt.title('Confusion Matrix for SVM')
 plt.xlabel('True label')
 plt.ylabel('Predicted label')
-#plt.savefig("assets/confusion_matrix.png")
 plt.legend()
 plt.show()
