@@ -92,13 +92,13 @@ print(classification_report(y_test, predictions))
 #Confusion Matrix 
 from sklearn.metrics import confusion_matrix,f1_score
 a = confusion_matrix(y_test,predictions)
-plt.figure(dpi=200)
+plt.figure(dpi=150)
 sns.heatmap(a.T, annot = True, fmt='d', cbar=False)
 
 plt.title('Confusion Matrix for Random Forrest')
 plt.xlabel('True label')
 plt.ylabel('Predicted label')
-#plt.show()
+plt.show()
 
 #References:
 #https://github.com/importdata/Twitter-Sentiment-Analysis/blob/master/Twitter_Sentiment_Analysis_Support_Vector_Classifier.ipynb
