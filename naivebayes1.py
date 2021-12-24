@@ -124,7 +124,7 @@ plt.title('Confusion Matrix for Multinomial Naive Bayes')
 plt.xlabel('True')
 plt.ylabel('Predicted')
 plt.legend()
-#plt.show()
+plt.show()
 
 #MODEL 2: Bernoulli Naive Bayes
 BNBmodel = BernoulliNB().fit(X_train, y_train)
@@ -140,12 +140,22 @@ score_lr = accuracy_score(predicted_lr, y_test)
 print("Accuracy for Logistic Regression classifier: ", score_lr)
 print(classification_report(y_test, predicted_lr))
 
+plt.figure(dpi=100)
+mat1 = confusion_matrix(y_test, predicted_lr)
+sns.heatmap(mat1.T, annot=True, fmt='d', cbar=False)
+
+plt.title('Confusion Matrix for LR')
+plt.xlabel('True')
+plt.ylabel('Predicted')
+plt.legend()
+plt.show()
+
 # calculate the fpr and tpr for all thresholds of the classification
 probs = modelMNB.predict_proba(X_test)
 preds = probs[:,1]
 fpr, tpr, threshold = roc_curve(y_test, preds)
 roc_auc = auc(fpr, tpr)
-plt.figure(dpi=500)                       
+plt.figure(dpi=120)                       
 plt.title('ROC Curve: Multinomial Naive Bayes')
 plt.plot(fpr, tpr, 'b', label = 'AUC = %0.2f' % roc_auc)
 plt.legend(loc = 'lower right')
