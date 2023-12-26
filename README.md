@@ -3,6 +3,7 @@ Identifying potential criminals and terrorists from social  media analysis.
 
 #### CPSC 571 Research Project
 > By Group 20
+-  Project report available [here](https://github.com/Bhodrolok/TerrorDetect/blob/main/CPSC571-ProjRep-G20.pdf).
 
 ### Installation and usage
 1. Download the repo from the main branch as a zip file.
