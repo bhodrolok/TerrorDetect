@@ -3,13 +3,18 @@ Identifying potential criminals and terrorists from social  media analysis.
 
 #### CPSC 571 Research Project
 > By Group 20
--  Project report available [here](https://github.com/Bhodrolok/TerrorDetect/blob/main/CPSC571-ProjRep-G20.pdf).
+-  The project report is available [here](https://github.com/Bhodrolok/TerrorDetect/blob/main/CPSC571-ProjRep-G20.pdf).
 
 ### Installation and usage
-1. Download the repo from the main branch as a zip file.
-2. Unzip/Extract the downloaded file to a folder.
-3. Navigate to the extracted folder
-4. Open a command line in this folder and run 'pip install -r requirements.txt'.
+1. Either clone the [repository](https://github.com/bhodrolok/TerrorDetect.git) or download it from the main branch as a zip file.
+    - ![image](https://github.com/bhodrolok/TerrorDetect/assets/51386657/294342b0-590f-49d2-95df-af56e472fb7c)
+3. Unzip and extract the downloaded file to a folder somewhere in your local drive.
+4. Navigate to the extracted folder.
+   - If cloned from step 1, navigate to the same folder.
+6. Open a command line in this folder and run:
+   ```console
+    $ pip install -r requirements.txt
+   ```
 
 _Brief explanation of files_
 - 'combiner.py': Simply combines all csv files into one singular complete dataset. 
