@@ -22,7 +22,7 @@ Identifying potential criminals and terrorists from social  media analysis.
 - [combiner.py](./combiner.py): Utility module for combining all the gathered `.csv` files into a singular dataset. 
 - [datasetcreator.py](./datasetcreator.py): Module for generating _individual_ datasets consisting of 10 tweets per keyword
     - as defined in the program as a keyword of commonly used extermists
-- [naivebayes1](./naivebayes1.py): Module which uses [Multinomial Naive Bayes](https://en.wikipedia.org/wiki/Naive_Bayes_classifier#Multinomial_naive_Bayes) and [Logistic Regression](https://en.wikipedia.org/wiki/Logistic_regression) classification models.
+- [naivebayes](./naivebayes.py): Module which uses [Multinomial Naive Bayes](https://en.wikipedia.org/wiki/Naive_Bayes_classifier#Multinomial_naive_Bayes) and [Logistic Regression](https://en.wikipedia.org/wiki/Logistic_regression) classification models.
     - Also performs tweet cleanup and preprocessing as well as visualizes the results
         - confustion matrix and accuracy prediction scores
 - [rforest.py](./rforest.py): Same as above but uses the [Random Forest](https://en.wikipedia.org/wiki/Random_forest) Classification model instead.
