@@ -13,7 +13,7 @@ Identifying potential criminals and terrorists from social  media analysis.
     - If cloned, skip this step.
 3. Navigate to the extracted/cloned folder.
     - Unless changed, it should be 'TerrorDetect'
-5. Open a terminal in this new folder and run the following command:
+5. Open a terminal in this new folder, type and run the following command:
    ```console
     $ pip install -r requirements.txt
    ```
