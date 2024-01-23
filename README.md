@@ -9,7 +9,7 @@ Identifying potential criminals and terrorists from social  media analysis.
 
 - Latest version of [Python](https://www.python.org/downloads/)
     - NB: Make sure that `pip` is also installed alongside the Python interpreter.
-- (:heavy_exclamation_mark: Optional :heavy_exclamation_mark:) [Git](https://www.git-scm.com/downloads).
+- ( :heavy_exclamation_mark: Optional :heavy_exclamation_mark: ) [Git](https://www.git-scm.com/downloads).
     - NB: Refer to the next section for details.
 
 ### Installation and usage
