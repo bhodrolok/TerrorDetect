@@ -2,9 +2,10 @@ import snscrape.modules.twitter as sntwitter
 import pandas as pd
 import glob
 
-file_extension = 'csv'
+csv_file_extension = 'csv'
+
 # Use list comprehension to get list of filenames that have .csv file extension
-all_csv_filenames = [i for i in glob.glob('*.{}'.format(file_extension))]
+all_csv_filenames = [i for i in glob.glob('*.{}'.format(csv_file_extension))]
 # Combine these files into a single list
 combined_csv_files = pd.concat([pd.read_csv(f) for f in all_csv_filenames])
 # Export to a final CSV dataset
